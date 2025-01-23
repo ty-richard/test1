@@ -96,21 +96,41 @@ const ExpandedRecommendationCard: React.FC<ExpandedRecommendationCardProps> = ({
           </div>
 
           <div className="w-full px-4 sm:hidden flex flex-col gap-2 mb-6">
-            <button className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors">
-              View Website
-            </button>
-            <button className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors">
-              Get Directions
-            </button>
+            <a 
+              href="https://www.booking.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-center"
+            >
+              BOOK ON BOOKING.COM
+            </a>
+            <a 
+              href="https://www.expedia.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-center"
+            >
+              BOOK ON EXPEDIA
+            </a>
           </div>
 
-          <div className="hidden sm:flex absolute bottom-[2rem] left-0 right-0 sm:w-1/2 flex-col items-center gap-2 px-4">
-            <button className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors">
-              View Website
-            </button>
-            <button className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors">
-              Get Directions
-            </button>
+          <div className="hidden sm:flex absolute bottom-[4rem] left-0 right-0 sm:w-1/2 flex-col items-center gap-2 px-4">
+          <a 
+              href="https://www.booking.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-center"
+            >
+              BOOK ON BOOKING.COM
+            </a>
+            <a 
+              href="https://www.expedia.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-center"
+            >
+              BOOK ON EXPEDIA
+            </a>
           </div>
         </div>
       </div>
