@@ -57,10 +57,10 @@ const ExpandedRecommendationCard: React.FC<ExpandedRecommendationCardProps> = ({
           </div>
 
           <div className="w-full sm:w-1/2 p-6">
-            <h3 className="text-2xl text-gray-600 mb-2">
+            <h3 className="text-2xl text-gray-600 mb-2 lowercase">
               {recommendationType === 'eat' ? 'Restaurant' : 'Hotel'}
             </h3>
-            <h2 className="text-3xl font-semibold">
+            <h2 className="text-3xl font-semibold lowercase">
               {recommendation.name}
             </h2>
             <p className="text-gray-600 mt-4 text-lg">

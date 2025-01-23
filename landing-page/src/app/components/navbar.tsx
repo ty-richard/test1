@@ -25,9 +25,9 @@ export default function Navbar() {
                 isMenuOpen ? 'flex' : 'hidden'
                 } flex-col absolute top-full right-0 w-full 
                 bg-black mt-2 p-4`}>
-                <li><Link href="/" className="block py-2 text-white hover:text-gray-300">Home</Link></li>
-                <li><Link href="/dashboard" className="block py-2 text-white hover:text-gray-300">Dashboard</Link></li>
-                <li><Link href="/api/auth/signout" className="block py-2 text-white hover:text-gray-300">Sign Out</Link></li>
+                <li><Link href="/home" onClick={() => setIsMenuOpen(false)} className="block py-2 text-white hover:text-gray-300">Home</Link></li>
+                <li><Link href="/account" onClick={() => setIsMenuOpen(false)} className="block py-2 text-white hover:text-gray-300">Account</Link></li>
+                <li><Link href="/api/auth/signout" onClick={() => setIsMenuOpen(false)} className="block py-2 text-white hover:text-gray-300">Sign Out</Link></li>
             </ul>
         </nav>
     )

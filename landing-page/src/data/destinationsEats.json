@@ -11,12 +11,15 @@
         "bookmarked": false,
         "checked": false,
         "rating": 4,
-        "cityId": 1
+        "cityId": 1,
+        "website": "https://www.papayaplaya.com",
+        "phoneNumber": "+1234567890",
+        "address": "123 Main St, Tulum, Mexico"
       },
       {
         "id": 2,
         "name": "Restaurant 2",
-        "description": "Description 2",
+        "description": "The Papaya Playa Project in Tulum, Mexico, is a distinctive eco-chic resort that captures the essence of bohemian luxury. Nestled on the pristine Caribbean coast, the hotel offers a unique blend of rustic...",
         "cityName": "Mallorca",
         "image": "/static/images/stockMallorca.jpg",
         "price": 2,
@@ -24,7 +27,10 @@
         "bookmarked": true,
         "checked": false,
         "rating": 4,
-        "cityId": 1
+        "cityId": 1,
+        "website": "https://www.papayaplaya.com",
+        "phoneNumber": "+1234567890",
+        "address": "123 Main St, Tulum, Mexico"
       },
       {
         "id": 3,
@@ -37,7 +43,10 @@
         "rating": 4,
         "bookmarked": true,
         "checked": true,
-        "cityId": 1
+        "cityId": 1,
+        "website": "https://www.papayaplaya.com",
+        "phoneNumber": "+1234567890",
+        "address": "123 Main St, Tulum, Mexico"
       },
       {
         "id": 4,
@@ -50,7 +59,10 @@
         "rating": 4,
         "bookmarked": false,
         "checked": false,
-        "cityId": 2
+        "cityId": 2,
+        "website": "https://www.papayaplaya.com",
+        "phoneNumber": "+1234567890",
+        "address": "123 Main St, Tulum, Mexico"
       },
       {
         "id": 5,
@@ -63,7 +75,10 @@
         "rating": 4,
         "bookmarked": false,
         "checked": false,
-        "cityId": 2
+        "cityId": 2,
+        "website": "https://www.papayaplaya.com",
+        "phoneNumber": "+1234567890",
+        "address": "123 Main St, Tulum, Mexico"
       },
       {
         "id": 6,
@@ -76,7 +91,10 @@
         "rating": 4,
         "bookmarked": false,
         "checked": false,
-        "cityId": 2
+        "cityId": 2,
+        "website": "https://www.papayaplaya.com",
+        "phoneNumber": "+1234567890",
+        "address": "123 Main St, Tulum, Mexico"
       }
     ]
 }

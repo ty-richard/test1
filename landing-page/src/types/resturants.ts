@@ -10,4 +10,7 @@ export interface Restaurant {
     bookmarked: boolean;
     checked: boolean;
     cityId: number;
+    website: string;
+    phoneNumber: string;
+    address: string;
 }

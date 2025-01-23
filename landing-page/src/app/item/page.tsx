@@ -10,6 +10,7 @@ import { Hotel } from '@/types/hotels';
 import { Restaurant } from '@/types/resturants';
 import { BookmarkIcon as BookmarkOutline } from '@heroicons/react/24/outline';
 import { BookmarkIcon as BookmarkSolid, CheckCircleIcon as CheckCircleSolid } from '@heroicons/react/24/solid';
+import ExpandedInfoCell from '../components/expandedInfoCell';
 
 function ItemContent() {
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -59,7 +60,7 @@ function ItemContent() {
 
   return (
     <div className="w-full space-y-8">
-      <div className="w-full h-[400px] mt-[45rem] md:mt-[40rem] relative overflow-hidden">
+      <div className="w-full h-[400px] mt-[68rem] md:mt-[65rem] relative overflow-hidden">
         <Image
           src={recommendationData?.image || destination.countryImage}
           alt={`${recommendationData?.name || destination.cityName} image`}
@@ -113,6 +114,38 @@ function ItemContent() {
         <p className="text-gray-700 text-lg leading-relaxed">
           {recommendationData?.description || destination.cityDescription}
         </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto px-4">
+        <a 
+            href="https://www.booking.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-center"
+        >
+            BOOK ON BOOKING.COM
+        </a>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto px-4">
+        <a 
+            href="https://www.expedia.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-center"
+        >
+            BOOK ON EXPEDIA
+        </a>
+      </div>
+      <div className="max-w-6xl mx-auto px-4">
+        <ExpandedInfoCell 
+          title="Contact Info"
+          contactInfo={{
+            phoneNumber: recommendationData?.phoneNumber || '',
+            website: recommendationData?.website || '',
+            address: recommendationData?.address || ''
+          }}
+        />
+        <ExpandedInfoCell title="Other Reviews" />
+        <ExpandedInfoCell title="All Booking Providers" />
       </div>
     </div>
   );
