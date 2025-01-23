@@ -1,0 +1,82 @@
+{
+    "resturants": [
+      {
+        "id": 1,
+        "name": "Restaurant 1",
+        "description": "The Papaya Playa Project in Tulum, Mexico, is a distinctive eco-chic resort that captures the essence of bohemian luxury. Nestled on the pristine Caribbean coast, the hotel offers a unique blend of rustic...",
+        "cityName": "Mallorca",
+        "image": "/static/images/stockMallorca.jpg",
+        "price": 3,
+        "keywords": "Eco-chic, Barefoot luxury, Creative community",
+        "bookmarked": false,
+        "checked": false,
+        "rating": 4,
+        "cityId": 1
+      },
+      {
+        "id": 2,
+        "name": "Restaurant 2",
+        "description": "Description 2",
+        "cityName": "Mallorca",
+        "image": "/static/images/stockMallorca.jpg",
+        "price": 2,
+        "keywords": "Eco-chic, Barefoot luxury, Creative community",
+        "bookmarked": true,
+        "checked": false,
+        "rating": 4,
+        "cityId": 1
+      },
+      {
+        "id": 3,
+        "name": "Restaurant 3",
+        "description": "Description 3",
+        "cityName": "Mallorca",
+        "image": "/static/images/stockMallorca.jpg",
+        "price": 4,
+        "keywords": "Eco-chic, Barefoot luxury, Creative community",
+        "rating": 4,
+        "bookmarked": true,
+        "checked": true,
+        "cityId": 1
+      },
+      {
+        "id": 4,
+        "name": "Restaurant 4",
+        "description": "Description 4",
+        "cityName": "Kyoto",
+        "image": "/static/images/stockMallorca.jpg",
+        "price": 3,
+        "keywords": "Eco-chic, Barefoot luxury, Creative community",
+        "rating": 4,
+        "bookmarked": false,
+        "checked": false,
+        "cityId": 2
+      },
+      {
+        "id": 5,
+        "name": "Restaurant 5",
+        "description": "Description 5",
+        "cityName": "Kyoto",
+        "image": "/static/images/stockMallorca.jpg",
+        "price": 3,
+        "keywords": "Eco-chic, Barefoot luxury, Creative community",
+        "rating": 4,
+        "bookmarked": false,
+        "checked": false,
+        "cityId": 2
+      },
+      {
+        "id": 6,
+        "name": "Restaurant 6",
+        "description": "Description 6",
+        "cityName": "Kyoto",
+        "image": "/static/images/stockMallorca.jpg",
+        "price": 3,
+        "keywords": "Eco-chic, Barefoot luxury, Creative community",
+        "rating": 4,
+        "bookmarked": false,
+        "checked": false,
+        "cityId": 2
+      }
+    ]
+}
