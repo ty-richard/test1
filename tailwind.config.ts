@@ -11,8 +11,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        skyBlue: '#D7E6F5',
+        navy: '#121E5B',
+        mint: '#D5F7B3',
+        sage: '#A9D0AA',
+        light: '#EBEAEB',
+        medium: '#716D79',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 } satisfies Config;
