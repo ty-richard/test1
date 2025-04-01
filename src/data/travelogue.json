@@ -1,0 +1,116 @@
+{
+  "trips": [
+    {
+      "tripId": 1,
+      "country": {
+        "countryImage": "/static/images/stockMallorca.jpg",
+        "cityName": "Mallorca",
+        "cityRegion": "Balearic Islands",
+        "country": "Spain",
+        "dateVisited": "2024-03-15",
+        "hotels": [
+          {
+            "hotelName": "papaya playa project",
+            "hotelBookmarked": true,
+            "hotelChecked": false,
+            "dateStayed": "2024-03-15",
+            "rating": 4,
+            "image": "/static/images/stockMallorca.jpg"
+          },
+          {
+            "hotelName": "casa bonita resort",
+            "hotelBookmarked": false,
+            "hotelChecked": true,
+            "dateStayed": "2024-03-17",
+            "rating": 4,
+            "image": "/static/images/stockMallorca.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "tripId": 2,
+      "country": {
+        "countryImage": "/static/images/stockKyoto.jpg",
+        "cityName": "Kyoto",
+        "cityRegion": "Kansai",
+        "country": "Japan",
+        "dateVisited": "2024-02-20",
+        "hotels": [
+          {
+            "hotelName": "papaya playa project",
+            "hotelBookmarked": false,
+            "hotelChecked": true,
+            "dateStayed": "2024-02-20",
+            "rating": 4,
+            "image": "/static/images/stockKyoto.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "tripId": 3,
+      "country": {
+        "countryImage": "/static/images/stockBali.jpg",
+        "cityName": "Ubud",
+        "cityRegion": "Bali",
+        "country": "Indonesia",
+        "dateVisited": "2023-11-10",
+        "hotels": [
+          {
+            "hotelName": "jungle paradise resort",
+            "hotelBookmarked": true,
+            "hotelChecked": true,
+            "dateStayed": "2023-11-10",
+            "rating": 5,
+            "image": "/static/images/stockBali.jpg"
+          },
+          {
+            "hotelName": "rice terrace villa",
+            "hotelBookmarked": false,
+            "hotelChecked": true,
+            "dateStayed": "2023-11-13",
+            "rating": 4,
+            "image": "/static/images/stockBali.jpg"
+          },
+          {
+            "hotelName": "monkey forest retreat",
+            "hotelBookmarked": true,
+            "hotelChecked": false,
+            "dateStayed": "2023-11-15",
+            "rating": 5,
+            "image": "/static/images/stockBali.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "tripId": 4,
+      "country": {
+        "countryImage": "/static/images/stockParis.jpg",
+        "cityName": "Paris",
+        "cityRegion": "Île-de-France",
+        "country": "France",
+        "dateVisited": "2023-09-05",
+        "hotels": [
+          {
+            "hotelName": "le petit palace",
+            "hotelBookmarked": true,
+            "hotelChecked": true,
+            "dateStayed": "2023-09-05",
+            "rating": 5,
+            "image": "/static/images/stockParis.jpg"
+          },
+          {
+            "hotelName": "eiffel view suites",
+            "hotelBookmarked": true,
+            "hotelChecked": true,
+            "dateStayed": "2023-09-08",
+            "rating": 4,
+            "image": "/static/images/stockParis.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

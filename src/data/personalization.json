@@ -1,0 +1,94 @@
+{
+  "personalizationQuestions": [
+    {
+      "id": 1,
+      "question": "How often do you typically travel?",
+      "options": [
+        "1-2 times per year",
+        "3-4 times per year",
+        "5+ times per year"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What's your ideal climate for a vacation?",
+      "options": [
+        "Tropical and warm",
+        "Mild and temperate",
+        "Cool and crisp"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which cuisine excites you the most?",
+      "options": [
+        "Asian (Japanese, Thai, Vietnamese)",
+        "Mediterranean (Italian, Greek, Spanish)",
+        "Latin American (Mexican, Brazilian, Peruvian)"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What's your preferred travel pace?",
+      "options": [
+        "Relaxed and leisurely",
+        "Balanced mix of activities",
+        "Fast-paced and adventurous"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Where do you prefer to stay?",
+      "options": [
+        "Luxury hotels and resorts",
+        "Boutique hotels and B&Bs",
+        "Local rentals and homestays"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What type of activities interest you most?",
+      "options": [
+        "Cultural (museums, historical sites)",
+        "Outdoor (hiking, water sports)",
+        "Urban (shopping, nightlife)"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "How do you prefer to explore a destination?",
+      "options": [
+        "Guided tours and organized trips",
+        "Self-guided with research",
+        "Spontaneous wandering"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What's your ideal trip duration?",
+      "options": [
+        "Short getaways (1-4 days)",
+        "Week-long trips (5-7 days)",
+        "Extended stays (8+ days)"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What's your travel budget preference?",
+      "options": [
+        "Budget-conscious",
+        "Moderate spender",
+        "Luxury experience"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "How far are you willing to travel?",
+      "options": [
+        "Within my country",
+        "Neighboring countries",
+        "Anywhere in the world"
+      ]
+    }
+  ]
+}

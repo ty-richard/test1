@@ -1,0 +1,26 @@
+{
+  "user": {
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "password": "password123",
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "California",
+    "zipCode": "90001",
+    "phoneNumber": "123-456-7890",
+    "homeAirport": "LAX",
+    "premiumUser": true,
+    "signedUp": true,
+    "signedIn": true,
+    "creditCardNumber": "1234-5678-9012-3456",
+    "creditCardExpiration": "12/25",
+    "creditCardCVC": "123",
+    "bookmarkedDestinations": [1, 2, 3],
+    "checkedDestinations": [1, 2, 3],
+    "recentTrip": "Spain",
+    "countriesVisited": 12,
+    "tripsSaved": 24
+  }
+}
