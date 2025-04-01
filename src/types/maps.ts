@@ -5,7 +5,8 @@ export interface HomeMapProps {
 export interface RecommendationsMapProps {
   mapCenter: { lat: number; lng: number };
   markers: Array<{ 
-    id: string; 
+    id: string;
+    locationType: string; 
     position: { lat: number; lng: number }; 
     name: string;
     cityName: string;

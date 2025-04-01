@@ -50,6 +50,7 @@ const RecommendationActionDetail: React.FC<RecommendationActionDetailProps> = ({
   const [mapCenter, setMapCenter] = useState({ lat: 0, lng: 0 });
   const [markers, setMarkers] = useState<Array<{
     id: string;
+    locationType: string;
     position: { lat: number; lng: number };
     name: string;
     cityName: string;
@@ -70,10 +71,12 @@ const RecommendationActionDetail: React.FC<RecommendationActionDetailProps> = ({
           setMapCenter(centerCoords);
 
           const markerPromises = recommendations.map(async (item) => {
+            console.log("ITEM", item, recommendationType)
             const address = `${item.name}, ${item.cityName}`;
             const coords = await geocodeAddress(address);
             return {
               id: item.id.toString(),
+              locationType: recommendationType,
               position: coords,
               name: item.name,
               cityName: item.cityName,
@@ -88,6 +91,7 @@ const RecommendationActionDetail: React.FC<RecommendationActionDetailProps> = ({
           const markerResults = await Promise.all(markerPromises);
           setMarkers(markerResults.map(item => ({
             id: item.id,
+            locationType: item.locationType,
             position: item.position,
             name: item.name,
             cityName: item.cityName,

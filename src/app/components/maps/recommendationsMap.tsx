@@ -38,7 +38,7 @@ const RecommendationsMap: React.FC<RecommendationsMapProps> = ({ mapCenter, mark
             onCloseClick={() => setSelectedMarker(null)}
           >
             <div className="p-2 sm:p-4 max-w-md text-navy">
-              <h3 className={`text-xl mb-2 lowercase ${roboto_serif.className}`}>Location</h3>
+              <h3 className={`text-xl mb-2 lowercase ${roboto_serif.className}`}>{selectedMarker.locationType}</h3>
               <h2 className={`text-2xl font-semibold lowercase ${dm_sans.className}`}>
                 {selectedMarker.name}
               </h2>
