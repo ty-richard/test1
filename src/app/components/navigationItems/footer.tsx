@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { inter } from '@/app/fonts';
-import Image from "next/image"
 
 const Footer = () => {
   return (
@@ -14,13 +13,9 @@ const Footer = () => {
       p-5
       flex flex-col items-center justify-center 
     `}>
-      <Image 
-        src="/static/logos/TheXplorist_Logo_Snow.svg"
-        alt="xplorist logo"
-        width={120}
-        height={40}
-        priority
-      />
+      <div className="text-2xl font-bold">
+        TESTING
+      </div>
       <nav>
         <ul className="flex flex-col items-center space-y-1">
           <li>
@@ -42,7 +37,7 @@ const Footer = () => {
       </nav>
 
       <div className="text-sm mt-2">
-        <span>© 2024 The Xplorist - All Rights Reserved</span>
+        <span>TESTING</span>
         <span className="mx-1">•</span>
         <Link href="/terms" className="hover:underline">Terms</Link>
         <span className="mx-1">•</span>

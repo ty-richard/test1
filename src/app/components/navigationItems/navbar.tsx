@@ -5,7 +5,6 @@ import { EllipsisVerticalIcon, MagnifyingGlassIcon } from '@heroicons/react/24/s
 import { useState, useEffect } from 'react'
 import userData from '@/data/user.json'
 import { inter } from '@/app/fonts';
-import Image from "next/image"
 import { useRouter } from 'next/navigation'
 import { Autocomplete, useLoadScript, Libraries } from '@react-google-maps/api'
 
@@ -110,13 +109,7 @@ export default function Navbar() {
         <nav className="relative flex items-center justify-between px-6 py-4 bg-light shadow-sm z-50">
             <div className="flex items-center">
                 <Link href="/" className="text-navy hover:text-gray-300">
-                    <Image 
-                        src="/static/logos/TheXplorist_Logo_DarkBlue.svg"
-                        alt="xplorist logo"
-                        width={120}
-                        height={40}
-                        priority
-                    />
+                    <span className="text-2xl font-bold">TESTING</span>
                 </Link>
             </div>
             
