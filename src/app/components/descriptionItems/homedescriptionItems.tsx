@@ -2,7 +2,7 @@ import DescriptionItem from './descriptionItem';
 
 const HomeDescriptionItems = () => {
   return (
-    <div className="w-full mb-8">
+    <div className="w-full mb-8 bg-light">
       <div className="grid grid-cols-3 md:grid-cols-6 gap-4 px-4">
         <DescriptionItem 
           title="eat"

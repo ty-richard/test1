@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
+import { inter, dm_sans } from '@/app/fonts';
 
 interface ContactInfo {
     phoneNumber: string;
@@ -22,14 +23,14 @@ export default function ExpandedInfoCell({ title, contactInfo }: ExpandedInfoCel
         switch (title) {
             case 'Contact Info':
                 return contactInfo && (
-                    <div className="mt-4 space-y-2 text-gray-600">
+                    <div className={`mt-4 space-y-2 text-navy-light ${inter.className}`}>
                         <p>{contactInfo.phoneNumber}</p>
                         <p>{contactInfo.address}</p>
                         <a 
                             href={contactInfo.website}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-500 hover:underline"
+                            className="text-navy hover:underline"
                         >
                             {contactInfo.website}
                         </a>
@@ -37,13 +38,13 @@ export default function ExpandedInfoCell({ title, contactInfo }: ExpandedInfoCel
                 );
             case 'Other Reviews':
                 return (
-                    <div className="mt-4 text-gray-600">
+                    <div className={`mt-4 text-navy ${dm_sans.className}`}>
                         Other Reviews
                     </div>
                 );
             case 'All Booking Providers':
                 return (
-                    <div className="mt-4 text-gray-600">
+                    <div className={`mt-4 text-navy ${inter.className}`}>
                         Booking Providers
                     </div>
                 );
@@ -53,16 +54,16 @@ export default function ExpandedInfoCell({ title, contactInfo }: ExpandedInfoCel
     };
 
     return (
-        <div className="border-b-blue-500 border-b-2">
+        <div className="border-b-navy border-b-2">
             <div 
                 className="py-4 px-6 flex justify-between items-center cursor-pointer"
                 onClick={() => setIsExpanded(!isExpanded)}
             >
-                <h3 className="text-lg text-gray-700">{title}</h3>
+                <h3 className={`text-lg text-navy ${inter.className}`}>{title}</h3>
                 {isExpanded ? (
-                    <ChevronDownIcon className="h-5 w-5 text-gray-500" />
+                    <ChevronDownIcon className="h-5 w-5 text-navy" />
                 ) : (
-                    <ChevronRightIcon className="h-5 w-5 text-gray-500" />
+                    <ChevronRightIcon className="h-5 w-5 text-navy" />
                 )}
             </div>
             <div className={`px-6 pb-4 ${isExpanded ? 'block' : 'hidden'}`}>

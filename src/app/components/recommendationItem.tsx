@@ -1,17 +1,15 @@
-import { useState } from 'react';
+import { dm_sans } from '@/app/fonts';
 
 interface RecommendationItemProps {
   id: string;
   title: string;
-  onSelect: (title: string) => void;
+  isSelected: boolean;
+  onSelect: (title: string, isSelected: boolean) => void;
 }
 
-const RecommendationItem = ({ id, title, onSelect }: RecommendationItemProps) => {
-  const [isSelected, setIsSelected] = useState(false);
-
+const RecommendationItem = ({ id, title, isSelected, onSelect }: RecommendationItemProps) => {
   const handleClick = () => {
-    setIsSelected(!isSelected);
-    onSelect(title);
+    onSelect(title, !isSelected);
   };
 
   return (
@@ -24,9 +22,10 @@ const RecommendationItem = ({ id, title, onSelect }: RecommendationItemProps) =>
         transition-colors
         duration-200
         text-3xl
+        ${dm_sans.className}
         ${isSelected 
-          ? 'bg-blue-500 text-white' 
-          : 'bg-white text-blue-500 border-2 border-blue-500'
+          ? 'bg-navy text-skyBlue border-2 border-navy' 
+          : 'bg-skyBlue text-navy border-2 border-navy'
         }
       `}
     >

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { inter, dm_sans } from '@/app/fonts';
 
 export default function SignupForm() {
   const router = useRouter();
@@ -47,7 +48,7 @@ export default function SignupForm() {
         placeholder="FIRST NAME"
         value={formData.firstName}
         onChange={handleInputChange}
-        className="w-full p-2 border rounded"
+        className={`w-full p-2 border border-navy rounded-xl bg-light ${inter.className}`}
       />
       
       <input
@@ -56,7 +57,7 @@ export default function SignupForm() {
         placeholder="LAST NAME"
         value={formData.lastName}
         onChange={handleInputChange}
-        className="w-full p-2 border rounded"
+        className={`w-full p-2 border border-navy rounded-xl bg-light ${inter.className}`}
       />
       
       <input
@@ -65,7 +66,7 @@ export default function SignupForm() {
         placeholder="HOME AIRPORT"
         value={formData.homeAirport}
         onChange={handleInputChange}
-        className="w-full p-2 border rounded"
+        className={`w-full p-2 border border-navy rounded-xl bg-light ${inter.className}`}
       />
       
       <input
@@ -74,7 +75,7 @@ export default function SignupForm() {
         placeholder="COUNTRY OF RESIDENCE"
         value={formData.countryOfResidence}
         onChange={handleInputChange}
-        className="w-full p-2 border rounded"
+        className={`w-full p-2 border border-navy rounded-xl bg-light ${inter.className}`}
       />
       
       <input
@@ -83,7 +84,7 @@ export default function SignupForm() {
         placeholder="PHONE NUMBER"
         value={formData.phoneNumber}
         onChange={handleInputChange}
-        className="w-full p-2 border rounded"
+        className={`w-full p-2 border border-navy rounded-xl bg-light ${inter.className}`}
       />
       
       <input
@@ -92,7 +93,7 @@ export default function SignupForm() {
         placeholder="PASSWORD"
         value={formData.password}
         onChange={handleInputChange}
-        className="w-full p-2 border rounded"
+        className={`w-full p-2 border border-navy rounded-xl bg-light ${inter.className}`}
       />
       
       <input
@@ -101,11 +102,11 @@ export default function SignupForm() {
         placeholder="CONFIRM PASSWORD"
         value={formData.confirmPassword}
         onChange={handleInputChange}
-        className="w-full p-2 border rounded"
+        className={`w-full p-2 border border-navy rounded-xl bg-light ${inter.className}`}
       />
       
       {passwordError && (
-        <p className="text-red-500 text-sm">{passwordError}</p>
+        <p className="text-red-900 text-sm">{passwordError}</p>
       )}
       
       <div className="flex items-center space-x-2">
@@ -114,18 +115,18 @@ export default function SignupForm() {
           name="marketingConsent"
           checked={formData.marketingConsent}
           onChange={handleInputChange}
-          className="h-4 w-4 rounded"
+          className="h-6 w-6 rounded border-navy text-sage focus:ring-navy"
         />
-        <label className="text-sm">
+        <label className={`text-sm text-navy ${inter.className}`}>
           Yes! Sign me up for early access to new features, product updates, and new content
         </label>
       </div>
       
       <button
         type="submit"
-        className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+        className={`w-full border-navy bg-skyBlue text-navy text-center text-bold py-2 px-4 rounded hover:bg-skyBlue-600 text-3xl ${dm_sans.className}`}
       >
-        Submit
+        submit
       </button>
     </form>
   );

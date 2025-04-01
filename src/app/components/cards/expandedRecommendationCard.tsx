@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { getPriceSymbols } from '../../../utils/helpers';
-import { BookmarkIcon as BookmarkOutline, XMarkIcon } from '@heroicons/react/24/outline';
-import { BookmarkIcon as BookmarkSolid, CheckCircleIcon as CheckCircleSolid } from '@heroicons/react/24/solid';
+import { XMarkIcon } from '@heroicons/react/24/outline';
+import BookmarkButton from '../buttons/bookmarkButton';
+import CheckButton from '../buttons/checkButton';
+import { roboto_serif, dm_sans, inter } from '@/app/fonts';
 import { Hotel } from '@/types/hotels';
 import { Restaurant } from '@/types/resturants';
 
@@ -57,50 +59,37 @@ const ExpandedRecommendationCard: React.FC<ExpandedRecommendationCardProps> = ({
           </div>
 
           <div className="w-full sm:w-1/2 p-6">
-            <h3 className="text-2xl text-gray-600 mb-2 lowercase">
-              {recommendationType === 'eat' ? 'Restaurant' : 'Hotel'}
-            </h3>
-            <h2 className="text-3xl font-semibold lowercase">
-              {recommendation.name}
-            </h2>
-            <p className="text-gray-600 mt-4 text-lg">
-              {recommendation.cityName} | ${getPriceSymbols(recommendation.price ?? 0)}
-            </p>
-            <p className="text-gray-600 mt-4 text-lg">Contact Info</p>
-            <div className="flex gap-3 mt-4">
-              <button 
-                onClick={toggleSaved}
-                className="text-gray-500 hover:text-gray-700"
-              >
-                {isBookmarked ? (
-                  <BookmarkSolid className="h-8 w-8 text-blue-500" />
-                ) : (
-                  <BookmarkOutline className="h-8 w-8" />
-                )}
-              </button>
-              <button 
-                onClick={toggleChecked}
-                className="text-gray-500 hover:text-gray-700"
-              >
-                <CheckCircleSolid 
-                  className={`h-8 w-8 transition-colors ${
-                    isChecked 
-                      ? 'text-green-500' 
-                      : 'text-gray-200'
-                  }`}
+            <div className="min-h-[400px]">
+              <h3 className={`text-2xl text-navy mb-2 lowercase ${roboto_serif.className}`}>
+                {recommendationType === 'eat' ? 'Restaurant' : 'Hotel'}
+              </h3>
+              <h2 className={`text-3xl font-semibold text-navy lowercase ${dm_sans.className}`}>
+                {recommendation.name}
+              </h2>
+              <p className={`text-navy mt-4 text-lg ${inter.className}`}>
+                {recommendation.cityName} | ${getPriceSymbols(recommendation.price ?? 0)}
+              </p>
+              <p className={`text-navy mt-4 text-lg ${inter.className}`}>Contact Info</p>
+              <div className="flex gap-3 mt-4">
+                <BookmarkButton 
+                  isBookmarked={isBookmarked}
+                  onToggle={toggleSaved}
                 />
-              </button>
+                <CheckButton 
+                  isChecked={isChecked}
+                  onToggle={toggleChecked}
+                />
+              </div>
+              <div className={`mt-4 text-navy text-lg ${inter.className}`}>{recommendation.description}</div>
+              <div className={`mt-4 text-navy text-lg ${inter.className}`}>Other Reviews: TODO</div>
             </div>
-            <div className="mt-4 text-lg">{recommendation.description}</div>
-            <div className="mt-4 text-lg">Other Reviews: TODO</div>
           </div>
-
           <div className="w-full px-4 sm:hidden flex flex-col gap-2 mb-6">
             <a 
               href="https://www.booking.com" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-center"
+              className={`w-full block border-2 border-navy bg-mint text-navy py-2 px-4 rounded-lg shadow-md hover:bg-mint-100 transition-colors text-center ${inter.className}`}
             >
               BOOK ON BOOKING.COM
             </a>
@@ -108,18 +97,18 @@ const ExpandedRecommendationCard: React.FC<ExpandedRecommendationCardProps> = ({
               href="https://www.expedia.com" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-center"
+              className={`w-full block border-2 border-navy bg-navy text-mint py-2 px-4 rounded-lg shadow-md hover:bg-navy-100 transition-colors text-center ${inter.className}`}
             >
               BOOK ON EXPEDIA
             </a>
           </div>
 
           <div className="hidden sm:flex absolute bottom-[4rem] left-0 right-0 sm:w-1/2 flex-col items-center gap-2 px-4">
-          <a 
+            <a 
               href="https://www.booking.com" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-center"
+              className={`w-full block border-2 border-navy bg-mint text-navy py-2 px-4 rounded-lg shadow-md hover:bg-mint-100 transition-colors text-center ${inter.className}`}
             >
               BOOK ON BOOKING.COM
             </a>
@@ -127,7 +116,7 @@ const ExpandedRecommendationCard: React.FC<ExpandedRecommendationCardProps> = ({
               href="https://www.expedia.com" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="w-full bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-center"
+              className={`w-full block border-2 border-navy bg-navy text-mint py-2 px-4 rounded-lg shadow-md hover:bg-navy-100 transition-colors text-center ${inter.className}`}
             >
               BOOK ON EXPEDIA
             </a>

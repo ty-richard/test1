@@ -1,10 +1,43 @@
+'use client';
+
+import AccountSubmenu from './components/accountSubmenu';
+import Profile from './components/profile';
+import Security from './components/security';
+import Personalization from './components/personalization';
+import Billing from './components/billing';
+import { useState } from 'react';
+import { MenuOption } from '../../types/accountTypes';
+
 export default function AccountPage() {
+  const [activeOption, setActiveOption] = useState<MenuOption>('profile');
+
+  const renderContent = () => {
+    switch (activeOption) {
+      case 'security':
+        return <Security />;
+      case 'personalization':
+        return <Personalization />;
+      case 'billing':
+        return <Billing />;
+      case 'profile':
+      default:
+        return <Profile />;
+    }
+  };
+
   return (
     <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold mb-4">My Account</h1>
-      <p className="text-gray-600">
-        This is a placeholder page that will be updated with account management features in the future.
-      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="md:border-r md:border-navy pr-8">
+          <AccountSubmenu
+            activeOption={activeOption}
+            setActiveOption={setActiveOption}
+          />
+        </div>
+        <div className="md:col-span-2">
+          {renderContent()}
+        </div>
+      </div>
     </div>
   );
 }
